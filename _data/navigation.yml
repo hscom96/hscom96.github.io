@@ -1,9 +1,10 @@
 # main links
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+main:
+  - title: "알고리즘"
+    url: /알고리즘
+  - title: "Category"
+    url: /categories
+  - title: "Tags"
+    url: /tags
+
+
