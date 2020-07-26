@@ -1,0 +1,72 @@
+---
+title:  "[백준][1406] 에디터"
+excerpt: ""
+categories:
+  - 알고리즘
+tags:
+  - 백준
+  - stack
+  - list
+last_modified_at: 2020-07-26T08:06:00-05:00
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
+---
+
+# 내가푼 코드(시간초과)
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
+        int m = Integer.parseInt(br.readLine());
+        int idx = str.length();
+        List<Character> list = new LinkedList();
+
+        for(int i=0; i<str.length(); i++)
+            list.add(str.charAt(i));
+
+        while(m-->0){
+            String cmd = br.readLine();
+            if(cmd.startsWith("P")){
+                char ch = cmd.split(" ")[1].charAt(0);
+                list.add(idx, ch);
+                idx++;
+            }else if(cmd.equals("B")){
+                if(idx-1 >= 0){
+                    list.remove(idx-1);
+                    idx--;
+                }
+            }else if(cmd.equals("L")){
+                if(idx-1 >= 0){
+                    idx--;
+                }
+            }else if(cmd.equals("D")){
+                if(idx+1<= list.size()){
+                    idx++;
+                }
+            }
+        }
+        for(char ch: list){
+            System.out.print(ch);
+        }
+    }
+}
+
+
+\\
+
+
+
+```
+
+# 남이푼 코드
+```java
+
+```
