@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "알고리즘"
-    url: /알고리즘
+    url: /categories/algorithm/
   - title: "Category"
     url: /categories
   - title: "Tags"
